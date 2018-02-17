@@ -55,6 +55,10 @@ p{
     }
 }
 
+.no-round-corners{
+  border-radius: 0 !important;
+}
+
 .logo-header{
   background-color:$color-headlines;
 
@@ -66,25 +70,48 @@ p{
   .header-headline{
     color:$backgroundGrey;
     font-family: $font-main;
-    font-size: 4vw;
-    margin: 6% 0;
+    font-size: 3.5vw;
+    margin: 5.5% 0 0 0;
   }
 
 }
 
 
-
-
+.hero-slider {
+padding:0 !important;
+}
 
 
 .headline {
   font-family: $header-font;
-  line-height: 40px;
-  padding:10% 0;
+  font-size: 40px;
+  line-height: 50px;
+  padding:5% 0;
   color:$color-headlines;
-
 }
 
-.my-carousel{
-  padding:0;
+.slider-container{
+   background-color: #000000;
+
+  .slider-image{
+    opacity: .5;
+  }
+  }
+
+  .reviews{
+    padding:2% 0;
+    background-color: $backgroundGrey;
+  }
+
+.footer{
+  background-color: $color-headlines
+}
+
+.au-footer-logo{
+  width:80%;
+  padding:5% 0;
+}
+
+.no-padding{
+  padding:0 !important;
 }
