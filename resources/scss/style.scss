@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Lato:300|Roboto+Slab');
+
+
 // Global Imports
 // ==========================================================================
 // Global Variables and mixins
@@ -6,3 +9,82 @@
 
 // partials
 @import 'partials/base';
+
+
+
+
+$logoBlue: #0c57ec;
+$darkerBlue: #2b4b98;
+$backgroundWhite: #ffffff;
+$backgroundGrey: #ebebeb;
+$color-headlines: #192d53;
+
+$font-main:'Lato', sans-serif;
+$header-font:'Roboto Slab', serif;
+
+
+p{
+  font-family: $font-main;
+}
+
+.navbar{
+  border-radius: 0;
+  background-color: $logoBlue;
+  margin-bottom: 0 !important;
+  border-radius: 0;
+
+ .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+  }
+
+ .navbar-collapse {
+    text-align: center;
+  }
+
+    a{
+      font-size: 20px;
+      color:$backgroundGrey;
+      letter-spacing: 1px;
+    }
+
+    .icon-bar{
+      background-color: $backgroundGrey;
+
+    }
+}
+
+.logo-header{
+  background-color:$color-headlines;
+
+  .au-logo{
+  width: 100%;
+  margin: 10% 0;
+  }
+
+  .header-headline{
+    color:$backgroundGrey;
+    font-family: $font-main;
+    font-size: 4vw;
+    margin: 6% 0;
+  }
+
+}
+
+
+
+
+
+
+.headline {
+  font-family: $header-font;
+  line-height: 40px;
+  padding:10% 0;
+  color:$color-headlines;
+
+}
+
+.my-carousel{
+  padding:0;
+}
