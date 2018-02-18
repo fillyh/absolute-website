@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Lato:300|Roboto+Slab');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700|Roboto+Slab:300,400');
 
 
 // Global Imports
@@ -18,6 +18,7 @@ $darkerBlue: #2b4b98;
 $backgroundWhite: #ffffff;
 $backgroundGrey: #ebebeb;
 $color-headlines: #192d53;
+$green:#2ecc71;
 
 $font-main:'Lato', sans-serif;
 $header-font:'Roboto Slab', serif;
@@ -25,6 +26,11 @@ $header-font:'Roboto Slab', serif;
 
 p{
   font-family: $font-main;
+}
+
+.header-font{
+  font-family: $header-font;
+  color:$color-headlines;
 }
 
 .navbar{
@@ -39,6 +45,7 @@ p{
     vertical-align: top;
   }
 
+
  .navbar-collapse {
     text-align: center;
   }
@@ -49,6 +56,7 @@ p{
       letter-spacing: 1px;
     }
 
+
     .icon-bar{
       background-color: $backgroundGrey;
 
@@ -58,6 +66,7 @@ p{
 .no-round-corners{
   border-radius: 0 !important;
 }
+
 
 .logo-header{
   background-color:$color-headlines;
@@ -70,11 +79,26 @@ p{
   .header-headline{
     color:$backgroundGrey;
     font-family: $font-main;
+    font-weight: 300;
     font-size: 3.5vw;
     margin: 5.5% 0 0 0;
   }
 
 }
+
+@media only screen and (max-width: 768px) {
+    .display-desktop{
+    display: none;
+    }
+
+}
+
+@media only screen and (min-width: 769px) {
+    .display-mobile{
+    display: none;
+    }
+}
+
 
 
 .hero-slider {
@@ -88,30 +112,59 @@ padding:0 !important;
   line-height: 50px;
   padding:5% 0;
   color:$color-headlines;
+
+  @media only screen and (max-width: 768px) {
+      font-size:30px;
+      line-height: 40px;
+    }
+
 }
 
 .slider-container{
    background-color: #000000;
-
-  .slider-image{
-    opacity: .5;
-  }
   }
 
-  .reviews{
-    padding:2% 0;
-    background-color: $backgroundGrey;
-  }
 
 .footer{
   background-color: $color-headlines
 }
 
 .au-footer-logo{
-  width:80%;
+  width:60%;
   padding:5% 0;
 }
 
 .no-padding{
   padding:0 !important;
+}
+
+.divider{
+  color:$color-headlines;
+  font-family: $header-font;
+  font-weight: 300;
+}
+
+.copyright-info{
+  padding:1% 0 0 0;
+  background-color:  $logoBlue;
+  color: $backgroundGrey;
+  font-size: 12px;
+}
+
+.green{
+  background-color: $green;
+}
+.cta-text{
+  color:white;
+  font-family:$font-main;
+  font-weight: 700;
+  margin:5% 0;
+  line-height: 55px;
+  font-size: 45px;
+
+  @media only screen and (max-width: 768px) {
+      font-size:25px;
+      line-height: 30px;
+    }
+
 }
