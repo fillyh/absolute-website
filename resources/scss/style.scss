@@ -19,6 +19,7 @@ $backgroundWhite: #ffffff;
 $backgroundGrey: #ebebeb;
 $color-headlines: #192d53;
 $green:#2ecc71;
+$color-icons:#778ca3;
 
 $font-main:'Lato', sans-serif;
 $header-font:'Roboto Slab', serif;
@@ -34,7 +35,6 @@ p{
 }
 
 .navbar{
-  border-radius: 0;
   background-color: $logoBlue;
   margin-bottom: 0 !important;
   border-radius: 0;
@@ -167,4 +167,62 @@ padding:0 !important;
       line-height: 30px;
     }
 
+}
+
+.background-color-change{
+  background-color:#636e72 !important;
+  background-blend-mode: multiply;
+
+}
+
+.jumbotron{
+  background-image: url(https://static.pexels.com/photos/48895/roof-plate-tiles-brick-black-48895.jpeg);
+  background-position: 5% 10%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 0 !important;
+
+h2{
+  font-family: $header-font;
+  font-size:50px;
+  color:white;
+  font-weight: 300;
+
+}
+
+  .services-intro{
+  font-family: $font-main;
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 35px;
+  letter-spacing: .2px;
+  color:white;
+}
+}
+
+.border-radius-none{
+  border-radius: 0 !important;
+}
+
+.cards-section{
+  background-color: $backgroundGrey;
+  padding:2% 0;
+}
+
+.roofing{
+  font-size: 60px;
+  color:$color-icons;
+}
+
+.card-title{
+  font-family: $header-font;
+  color: $color-icons;
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.my-cards{
+  padding: 5% 0;
+  border: solid 2px black;
 }
