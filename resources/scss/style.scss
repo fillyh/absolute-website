@@ -27,6 +27,7 @@ $header-font:'Roboto Slab', serif;
 
 p{
   font-family: $font-main;
+  font-size: 16px;
 }
 
 .header-font{
@@ -204,25 +205,29 @@ h2{
   border-radius: 0 !important;
 }
 
-.cards-section{
+.srv-roofing{
   background-color: $backgroundGrey;
-  padding:2% 0;
 }
 
-.roofing{
-  font-size: 60px;
-  color:$color-icons;
-}
-
-.card-title{
+.services-title{
   font-family: $header-font;
-  color: $color-icons;
-  font-size: 30px;
+  color: $darkerBlue;
+  font-size: 25px;
   font-weight: 400;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
-.my-cards{
-  padding: 5% 0;
-  border: solid 2px black;
+.services-image{
+  border-radius: 5px;
+  border: solid white 3px;
+box-shadow: 2px 2px 10px #636e72;
+margin: 5% 0;
+}
+
+.services-padding{
+  padding: 3% 0;
+}
+
+.srv-painting{
+  background-color: white;
 }
